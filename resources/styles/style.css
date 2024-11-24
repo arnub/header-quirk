@@ -1,0 +1,106 @@
+/* nav */
+nav#menu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+nav#menu button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav#menu button:hover {
+  background-color: #0056b3;
+}
+
+/* default for all sections */
+#content > div {
+  display: none;
+}
+
+#content > div:target,
+#content > div:first-child {
+  display: block;
+}
+
+.kv-item {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.kv-item input {
+  padding: 3px;
+  flex: 1;
+}
+/*
+button {
+  padding: 5px;
+  cursor: pointer;
+}
+*/
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+/* settings section */
+#settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#folder-path {
+  padding: 5px;
+}
+
+#selected-path {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+/* JSON-Download-Button */
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}

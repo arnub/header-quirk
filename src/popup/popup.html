@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key-Value Manager</title>
+    <link rel="stylesheet" href="../../resources/style.css">
+</head>
+<body>
+<div id="app">
+    <!-- Navigation -->
+    <nav id="menu">
+        <button id="menu-profile">Profile</button>
+        <button id="menu-settings">Settings</button>
+    </nav>
+
+    <!-- Main -->
+    <div id="content">
+        <!-- Default Key-Value-Manager -->
+        <div id="key-value-manager">
+            <h1>Key-Value Manager</h1>
+            <form id="kv-form">
+                <input type="text" id="key" placeholder="Key" required>
+                <input type="text" id="value" placeholder="Value" required>
+                <button type="submit">Add</button>
+            </form>
+            <div id="kv-list"></div>
+        </div>
+
+        <!-- Profile section -->
+        <div id="profile" style="display: none;">
+            <h1>Profile</h1>
+            <p>Show customized profiles.</p>
+        </div>
+
+        <div id="settings">
+            <h1>Settings</h1>
+            <form id="settings-form">
+                <label for="folder-path">Select local path:</label>
+                <input type="file" id="folder-path" webkitdirectory directory>
+                <button type="submit">Save</button>
+            </form>
+            <p id="selected-path">No path selected</p>
+            <p>JSON-Files will be saved in selected path.</p>
+        </div>
+
+    </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
